@@ -21,7 +21,7 @@ namespace Rock_Paper_Scissors_Lizard_Spock
         public void PlayRPSLS()
         {
             SelectPlayers();
-            
+            playerOne.ThrowAGesture();
         }
         public void SelectPlayers() //will instantiate either 2 humans or a human and a computer at game start
         {

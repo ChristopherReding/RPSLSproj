@@ -11,23 +11,27 @@ namespace Rock_Paper_Scissors_Lizard_Spock
         //member variables
         public string name;
         public int score;
-        public Gesture[] GestureChoices;
+        public List<Gesture> gestures = new List<Gesture>();
         //constructor
         public Competitor()
         {
             score = 0;
-            GestureChoices = new Gesture[]
-            {
-                new Gesture("Rock"),//index 0
-                new Gesture("Paper"),//1
-                new Gesture("Scissors"),//2
-                new Gesture("Lizard"),//3
-                new Gesture("Spock"),//4
-            };
+            Gesture rock = new Gesture("Rock");
+            Gesture paper = new Gesture("Paper");
+            Gesture scissors = new Gesture("Scissors");
+            Gesture lizard = new Gesture("Lizard");
+            Gesture spock = new Gesture("Spock");
+            gestures.Add(rock);//0
+            gestures.Add(paper);//1
+            gestures.Add(scissors);//2
+            gestures.Add(lizard);//3
+            gestures.Add(spock);//4
         }
+           
         //member methods
-        public virtual void ThrowAGesture()
+        public virtual string ThrowAGesture()
         {
         }
     }
 }
+

@@ -17,17 +17,18 @@ namespace Rock_Paper_Scissors_Lizard_Spock
             
         }
         //member methods
-        public override void ThrowAGesture()
+        public override string ThrowAGesture()
         {
             Console.WriteLine("Choose a gesture to throw");
-            int i = 1;
-            foreach (Gesture gesture in GestureChoices)
+            int i = 0;
+            foreach (Gesture gesture in gestures)
             {
-                Console.WriteLine($"{i} {gesture.gestureName}");
+                Console.WriteLine($"{i+1} {gesture.gestureName}");
                 i++;
             }
-
-
+            int gestureChoice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{name} threw {gestures[gestureChoice-1].gestureName}");
+            return gestures[gestureChoice - 1].gestureName;
         }
     }
 }
