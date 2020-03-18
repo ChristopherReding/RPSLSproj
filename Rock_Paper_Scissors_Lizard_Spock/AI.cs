@@ -20,7 +20,7 @@ namespace Rock_Paper_Scissors_Lizard_Spock
         {
             Random randomNumber = new Random();
             int gestureChoice = randomNumber.Next(4);
-            Console.WriteLine($"{name} threw {gestures[gestureChoice]}");
+            Console.WriteLine($"{name} threw {gestures[gestureChoice]}\n");
             gesture = gestures[gestureChoice];
             
         }

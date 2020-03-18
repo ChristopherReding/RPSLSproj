@@ -35,6 +35,7 @@ namespace Rock_Paper_Scissors_Lizard_Spock
                 Console.WriteLine($"{i + 1} {gesture}");
                 i++;
             }
+            Console.WriteLine(" ");
         }
 
     }
