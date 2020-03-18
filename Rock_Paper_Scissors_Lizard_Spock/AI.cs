@@ -16,12 +16,12 @@ namespace Rock_Paper_Scissors_Lizard_Spock
             name = "Simon";
         }
         //member methods
-        public override string ThrowAGesture()
+        public override void ChooseAGesture()
         {
             Random randomNumber = new Random();
             int gestureChoice = randomNumber.Next(4);
-            Console.WriteLine($"{name} threw {gestures[gestureChoice].gestureName}");
-            return gestures[gestureChoice].gestureName;
+            Console.WriteLine($"{name} threw {gestures[gestureChoice]}");
+            gesture = gestures[gestureChoice];
             
         }
 

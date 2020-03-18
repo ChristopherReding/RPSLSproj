@@ -46,7 +46,6 @@
     <Compile Include="AI.cs" />
     <Compile Include="Arena.cs" />
     <Compile Include="Competitor.cs" />
-    <Compile Include="Gesture.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
